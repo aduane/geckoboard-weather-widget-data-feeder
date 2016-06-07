@@ -1,24 +1,15 @@
-# README
+# Geckoboard Weather Widget Data Feeder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+hitting /weather will get the current weather information from the open
+weather map API and return it in a format that can be used in a Geckoboard
+Custom "Text" Widget.
 
-Things you may want to cover:
+There are 3 environment variables that need to be set for this to work:
+* OPENWEATHERMAP\_API\_KEY
+* WEATHER\_UNITS
+* WEATHER\_SEARCH\_STRING
 
-* Ruby version
+Deploy with one click. It will even prompt you for the environment variable
+values. Neat!
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aduane/geckoboard-weather-widget-data-feeder)
