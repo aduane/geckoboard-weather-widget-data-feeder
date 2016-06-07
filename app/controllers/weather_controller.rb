@@ -4,7 +4,7 @@ class WeatherController < ApplicationController
     weather_data = JSON.load(open(weather_url))
     description = weather_data['weather'].first['description']
     weather_icon = weather_data['weather'].first['icon']
-    temp = weather_data['main']['temp']
+    temp = weather_data['main']['temp'].to_i
     min_temp = weather_data['main']['temp_min']
     max_temp = weather_data['main']['temp_max']
     @weather = {'item' => [{'text' => "<div class='t-size-x72'>#{temp}&deg;</div><div>#{description}</div>"}]}
