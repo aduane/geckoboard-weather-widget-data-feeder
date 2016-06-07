@@ -1,5 +1,5 @@
 {
-  "name": "Geckboard Weather Widget Data Feeder",
+  "name": "geckoboard weather data",
   "description": "Grabs current weather data and formats it for use in a Geckoboard custom text widget",
   "keywords": [
     "weather",
