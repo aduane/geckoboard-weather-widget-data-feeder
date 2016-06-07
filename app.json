@@ -7,7 +7,7 @@
     "geckoboard"
   ],
   "repository": "https://github.com/aduane/geckoboard-weather-widget-data-feeder",
-  "success_url": "/instructions",
+  "success_url": "/weather",
   "env": {
     "OPENWEATHERMAP_API_KEY": {
       "description": "A key that gives you access to the open weather map API. http://openweathermap.org/api"
