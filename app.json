@@ -1,0 +1,23 @@
+{
+  "name": "Geckboard Weather Widget Data Feeder",
+  "description": "Grabs current weather data and formats it for use in a Geckoboard custom text widget",
+  "keywords": [
+    "weather",
+    "rails",
+    "geckoboard"
+  ],
+  "repository": "https://github.com/aduane/geckoboard-weather-widget-data-feeder",
+  "success_url": "/instructions",
+  "env": {
+    "OPENWEATHERMAP_API_KEY": {
+      "description": "A key that gives you access to the open weather map API. http://openweathermap.org/api"
+    },
+    "WEATHER_SEARCH_STRING": {
+      "description": "Where to get the weather for."
+    },
+    "WEATHER_UNITS": {
+      "description": "Valid options are: Kelvin, Metric, or Imperial"
+    }
+  },
+  "image": "heroku/ruby"
+}
