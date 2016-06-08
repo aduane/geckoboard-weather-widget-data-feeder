@@ -20,8 +20,8 @@ class WeatherController < ApplicationController
     description = weather_data['weather'].first['description']
     weather_icon = weather_data['weather'].first['icon']
     temp = weather_data['main']['temp'].to_i
-    min_temp = weather_data['main']['temp_min']
-    max_temp = weather_data['main']['temp_max']
+    min_temp = weather_data['main']['temp_min'].to_i
+    max_temp = weather_data['main']['temp_max'].to_i
     "<div class='t-size-x72' style='float: left'>#{temp}°</div> <div class='t-size-x30 pull-right'>▴#{max_temp}°</div> <div class='t-size-x30 pull-right'>▾#{min_temp}°</div> <div class='t-size-x36 pull-left'>#{description}</div>"
   end
 end
